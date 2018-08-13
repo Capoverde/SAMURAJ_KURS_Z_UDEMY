@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+
 *, *::before, *::after
 {
 padding: 0;
@@ -5,6 +7,26 @@ margin: 0;
 box-sizing: border-box;
 }
 
+:root
+{
+    --hero-c: #ffc30b;
+    --bd-bg: #464646;
+}
+
 body{
-    background: #000;
+    background: var(--bd-bg);
+}
+
+h1
+{
+    text-align: center;
+    margin-top: 10%;
+}
+
+h1 a
+{
+    text-decoration: none;
+    color: var(--hero-c);
+    font-family: 'Muli';
+    text-shadow: 2px 2px rgba(0,0,0, .5);
 }
