@@ -1,20 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="root/css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="root/css/01.css">
     <title>Document</title>
 </head>
-<body>
-    <h1><a href="https://www.youtube.com/watch?v=4y0VB3xytgo" target="_blank">właściwości fontów</a></h1>
-    <ul>
-        <li>text-align-last: center;</li>
-        <li>word-wrap: break-word;</li>
-        <li>hyphens: auto;</li>
-    </ul>
 
+<body>
+    <div class="container">
+        <h1>
+            <a href="https://www.youtube.com/watch?v=4y0VB3xytgo" target="_blank">właściwości fontów</a>
+        </h1>
+        <ul>
+            <li>text-align-last: center;</li>
+            <li>word-wrap: break-word;</li>
+            <li>hyphens: auto;</li>
+        </ul>
+
+    </div>
+    <div class="container">
+        <section class="day2">
+            <article>
+                <h1>POSITION</h1>
+                <p>cztery podstawowe wartości:</p>
+                <ol>
+                    <li>static -
+                        <span>domyślna, dzięki niej wszystkie elementy są w jednej pozycji i się widzą. dla static top, left i
+                            z-index nie dzialają.
+                        </span>
+                    </li>
+                    <li>fixed
+                        <span>dizęki niemu wyjmujemy element ze struktury i przyklejamy do okna przeglądarki. Ustawia pozycję zawsze
+                            względem okna przeglądarki. Pododaniu position: fixed element liniowy, np. span staje się elementem
+                            blokowym.
+                        </span>
+                    </li>
+                    <li>absolute -
+                        <span>Jest pozycjonowany DOMYŚLNIE względem okna przeglądarki, ale nie jest przyklejony. Żeby był pozycjonowany
+                            względem rodzica musi być w nim zagnieżdżony i rodzic musi posiadać position: relative (będzie
+                            też działało jeśli rodzic będzie miał position: ustawione na inną wartość)</span>
+                    </li>
+                    <li>relative -
+                        <span> Pozycjonowanie elementu względem JEGO pozycji, a nie np. okna przeglądarki, czy rodzica. Ciągle jest
+                            widziany w układzie, ale możemy go przemieszczać.</span>
+                    </li>
+                </ol>
+            </article>
+        </section>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <script src="root/scripts/main.js"></script>
 </body>
+
 </html>
