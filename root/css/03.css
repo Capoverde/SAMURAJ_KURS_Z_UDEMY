@@ -32,13 +32,13 @@ body {
     overflow: hidden;
 }
 
-nav {
+nav.desktop {
     float: left;
     width: 300px;
     background-color: blanchedalmond;
 }
 
-nav ul a {
+na.desktopv ul a {
     display: inline-block;
     line-height: 72px;
     font-size: 22px;
@@ -47,24 +47,24 @@ nav ul a {
     padding: 0 5px 0 30px;
 }
 
-nav ul a:hover {
+nav.desktop ul a:hover {
     color: red;
 }
 
-nav ul a:hover i {
+nav.desktop ul a:hover i {
     margin-right: 50px;
     color: red;
     border-right: 2px solid red;
 }
 
-nav ul a i {
+nav.desktop ul a i {
     width: 50px;
     border-right: 2px solid #000;
     margin-right: 30px;
     transition: .5s;
 }
 
-nav,
+nav.desktop,
 header {
     height: 360px;
 }
@@ -110,6 +110,45 @@ span {
     color: grey;
 }
 
-/* -------------- MEDIA QUERIES -------------------- */
+/* ------------------------- MEDIA QUERIES --------------------------- */
 
-@media
+nav.desktop {
+    display: block;
+}
+
+nav.mobile {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    nav.desktop {
+        display: none;
+    }
+    nav.mobile {
+        position: fixed;
+        display: block;
+        width: 72px;
+        height: 100%;
+        background: #000;
+        color: #fff;
+    }
+    nav.mobile a {
+        display: block;
+        line-height: 10vh;
+        color: #ffffff;
+        font-size: 30px;
+        text-align: center;
+    }
+    nav.mobile a:hover {
+        color: red;
+    }
+    nav.mobile li:nth-child(1) a {
+        color: royalblue;
+    }
+    header {
+        width: 100%;
+    }
+    section h1 {
+        font-size: 20px;
+    }
+}
