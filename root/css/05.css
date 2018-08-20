@@ -96,6 +96,11 @@ input {
   width: 26px;
   height: 26px;
   margin-right: 30px;
+  background-color: transparent;
+}
+
+input:checked {
+  color: red;
 }
 
 .container div {
