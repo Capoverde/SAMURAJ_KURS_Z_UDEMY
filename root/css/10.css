@@ -63,7 +63,7 @@ section {
 .romb {
     position: absolute;
     top: calc(100% - 75px);
-    left: 50%;
+    left: calc(50% - 75px);
     transform: translate(-50%, -50%);
     width: 150px;
     height: 150px;
