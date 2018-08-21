@@ -47,3 +47,54 @@ h1 a:hover::before {
     /* border: 1px solid red; */
     opacity: .7;
 }
+
+/* --------------------------------------------- */
+
+:root {
+    --w: 50px;
+    --h: 50px;
+}
+
+button {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 15px;
+    font-family: 'Muli';
+    border: 1px solid #ffffff;
+    color: #dddddd;
+    background: transparent;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+button:hover {
+    background: #363636;
+    color: #ffc30b;
+    border: 1px solid #ffc30b;
+    transform: translate(-50%, -50%);
+}
+
+.square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: var(--h);
+    height: var(--w);
+    transition: 1s linear;
+}
+
+button:hover+.square {
+    width: calc(var(--w)*2);
+    height: calc(var(--h)*2);
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+    background: #ffc30b;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+}
