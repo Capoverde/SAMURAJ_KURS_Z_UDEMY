@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hero-c: #e4ad09;
+    --bd-bg: #262626;
+    --p-c: #dddddd;
+}
+
+body {
+    background: var(--bd-bg);
+    font-family: 'Muli';
+    color: var(--hgero-c);
+}
+
+h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--hero-c);
+}
+
+h1 a:hover {
+    color: red;
+}
+
+h1 a:hover::before {
+    content: 'link do filmiku na Udemy';
+    position: absolute;
+    top: -28px;
+    left: 20%;
+    padding: 5px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 200;
+    background: rgba(0, 0, 0, .25);
+    /* border: 1px solid red; */
+    opacity: .7;
+}
+
+.container {
+    margin-top: 200px;
+}
+
+.container p {
+    color: var(--p-c);
+    text-align: justify;
+}
