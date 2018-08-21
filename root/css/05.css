@@ -47,6 +47,7 @@ h1 a:hover::before {
   font-size: 12px;
   color: red;
   padding: 10px;
+  transition: 2s;
 }
 
 /* h1 a:hover::after {
@@ -106,11 +107,15 @@ input:checked {
 .container div {
   width: var(--sizeRect);
   height: var(--sizeRect);
-  border: 6px solid red;
+  color: #bbbbbb;
+  border: 10px solid red;
   position: absolute;
   background: #262626;
   top: 60%;
   left: 50%;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 28px;
   transition: .3s;
   transform: translate(-50%, -50%);
   -webkit-box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.75);
@@ -118,11 +123,12 @@ input:checked {
   box-shadow: 0px 1px 9px 1px rgba(0, 0, 0, 0.75);
 }
 
-/* ---- akcja kiedy input o określonym Id jest zaznaczony --- */
+/* - akcja kiedy input o określonym id jest zaznaczony - */
 
 #size:checked~div {
-  width: calc(var(--sizeRect)*2);
-  height: calc(var(--sizeRect)*2);
+  width: calc(var(--sizeRect) * 2);
+  height: calc(var(--sizeRect) * 2);
+  border: 20px solid red;
 }
 
 #rotate:checked~div {
