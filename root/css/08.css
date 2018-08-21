@@ -54,15 +54,30 @@ h1 a:hover::before {
     margin-top: 250px;
 }
 
+p {
+    color: #ddd;
+    /* transform: rotate(20deg); */
+}
+
 img {
     width: 200px;
     height: 200px;
-    transform: rotate(0deg);
+    /* transform: rotate(0deg); */
+    /* transform: scale(1); */
+    /* transform: translate(); */
+    /* transform: skew(-20deg, -20deg); */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 1s;
+    cursor: pointer;
     -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
 }
 
-p {
-    color: #ddd;
+img:hover {
+    /* transform: rotate(360deg) */
+    /* transform: scale(1.5); */
 }
