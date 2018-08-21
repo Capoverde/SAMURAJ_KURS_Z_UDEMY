@@ -1,0 +1,105 @@
+/* Dlaczego to nie dziala? Bo nie można w ccs-ie wskazać selektorem rodzica.
+
+Rozwiązanie jest w javaScripcie - plik 0.6.js*/
+
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bd0-bg: grey;
+    --bd1-bg: red;
+    --bd2-bg: green;
+    --bd3-bg: blue;
+    --bd4-bg: #b98d07;
+}
+
+body {
+    background: var(--bd0-bg);
+    transition: .5s;
+}
+
+/* -------- KLASY DLA JAVASCRIPTU ---------- */
+
+body.bg1 {
+    background: var(--bd1-bg);
+}
+
+body.bg2 {
+    background: var(--bd2-bg);
+}
+
+body.bg3 {
+    background: var(--bd3-bg);
+}
+
+body.bg4 {
+    background: var(--bd4-bg);
+}
+
+/* -------------------------------------- */
+
+div {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 12px 0 0 0;
+    text-align: center;
+    font-family: 'Muli';
+    color: #ffffff;
+    border: 3px solid #fff;
+}
+
+#sp-1 {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    background-color: var(--bd1-bg);
+    cursor: pointer;
+    -webkit-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+#sp-1:hover body {
+    background: var(--bd1-bg);
+}
+
+#sp-2 {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background-color: var(--bd2-bg);
+    cursor: pointer;
+    -webkit-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+#sp-3 {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    background-color: var(--bd3-bg);
+    cursor: pointer;
+    -webkit-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.75);
+}
+
+#sp-4 {
+    position: absolute;
+    bottom: 10%;
+    right: 10%;
+    background-color: var(--bd4-bg);
+    cursor: pointer;
+    -webkit-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 12px 0px rgba(0, 0, 0, 0.75);
+}

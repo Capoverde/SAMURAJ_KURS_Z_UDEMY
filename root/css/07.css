@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hero-c: #ffc30b;
+    --bd-bg: #464646;
+}
+
+body {
+    background: var(--bd-bg);
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--hero-c);
+    font-family: 'Muli';
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px rgba(0, 0, 0, .75);
+    transition: .5s;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h1 a:hover {
+    color: red;
+}
+
+h1 a:hover::before {
+    content: 'link do filmiku na Udemy';
+    position: absolute;
+    top: -28px;
+    left: 20%;
+    padding: 5px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 200;
+    background: rgba(0, 0, 0, .25);
+    /* border: 1px solid red; */
+    opacity: .7;
+}
+
+/* --------------------------------------------- */
+
+:root {
+    --w: 50px;
+    --h: 50px;
+}
+
+button {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 15px;
+    font-family: 'Muli';
+    border: 1px solid #ffffff;
+    color: #dddddd;
+    background: transparent;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+button:hover {
+    background: #363636;
+    color: #ffc30b;
+    border: 1px solid #ffc30b;
+    transform: translate(-50%, -50%);
+}
+
+/* 
+.square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: var(--h);
+    height: var(--w);
+    transition: 1s linear;
+} */
+
+button:hover+.square {
+    width: calc(var(--w)*2);
+    height: calc(var(--h)*2);
+    top: calc(100% - 100px);
+    left: calc(100% - 100px);
+    background: #ffc30b;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.75);
+}
+
+/* Wariacja (komplikacja zadania) */
+
+.square {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    width: var(--h);
+    height: var(--w);
+    transition: left 1s, top .5s .5s, width 1s, height 1s;
+}
