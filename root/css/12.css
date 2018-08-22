@@ -48,3 +48,31 @@ h1 a:hover::before {
     /* border: 1px solid red; */
     opacity: .7;
 }
+
+.clock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+    height: 40vw;
+    border-radius: 50%;
+    background: #262626;
+}
+
+.hand {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    width: 6px;
+    height: 45%;
+    background: red;
+    border-radius: 10% 50% 10% 50%;
+    transform: rotate(0deg) translateX(-50%);
+    transform-origin: 50% 100%;
+    transition: 60s steps(60);
+}
+
+.clock:hover .hand {
+    transform: rotate(360deg) translateX(-50%);
+}
