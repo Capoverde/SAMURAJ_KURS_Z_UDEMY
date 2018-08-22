@@ -9,7 +9,7 @@
 
 :root {
     --hero-c: #e4ad09;
-    --bd-bg: #8b8787;
+    --bd-bg: #bebbbb;
     --p-c: #dddddd;
 }
 
@@ -65,3 +65,74 @@ span {
     -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
 }
+
+/* --- do hovera --- */
+
+span:hover~#roof {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background: #000;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: .5s .5s;
+}
+
+span:hover~#front {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    width: 423px;
+    height: 300px;
+    background: #ddd;
+    transform: translate(-50%, -50%);
+    transition: .5s .6s;
+}
+
+span:hover~#window1 {
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition: .5s .5s;
+}
+
+span:hover~#window2 {
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition: .5s .7s;
+}
+
+span:hover~#door {
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 150px;
+    background: brown;
+    transition: .5s .8s;
+}
+
+span:hover~#cheemney {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 200px;
+    background: grey;
+    z-index: -1;
+    transition: .5s .9s;
+}
+
+/* --pozycja wyjściowa -- */
