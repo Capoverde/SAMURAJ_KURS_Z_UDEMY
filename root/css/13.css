@@ -9,7 +9,7 @@
 
 :root {
     --hero-c: #e4ad09;
-    --bd-bg: #b8aaaa;
+    --bd-bg: #ffffff;
     --p-c: #dddddd;
 }
 
@@ -198,4 +198,16 @@ span:nth-child(4) {
 #BTN:hover::after {
     right: -50%;
     height: 66px;
+}
+
+.cont {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
 }
