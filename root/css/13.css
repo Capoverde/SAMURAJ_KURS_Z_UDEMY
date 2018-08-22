@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hero-c: #e4ad09;
+    --bd-bg: #363636;
+    --p-c: #dddddd;
+}
+
+body {
+    background: var(--bd-bg);
+    font-family: 'Muli';
+    color: var(--hgero-c);
+    text-align: center;
+}
+
+h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--hero-c);
+}
+
+h1 a:hover {
+    color: red;
+}
+
+h1 a:hover::before {
+    content: 'link do filmiku na Udemy';
+    position: absolute;
+    top: -28px;
+    left: 20%;
+    padding: 5px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 200;
+    background: rgba(0, 0, 0, .25);
+    /* border: 1px solid red; */
+    opacity: .7;
+}
+
+#btn {
+    position: relative;
+    padding: 10px 25px;
+    font-size: 40px;
+    margin: 300px;
+    border-style: none;
+    color: #fff;
+    background: grey;
+    overflow: hidden;
+    transition: .5s;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+#btn:hover {
+    color: red;
+    background: rgb(75, 75, 75);
+}
+
+span:nth-child(1) {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    left: -100%;
+    transition: .5s;
+}
+
+#btn:hover span:nth-child(1) {
+    left: 0%;
+}
+
+span:nth-child(2) {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: red;
+    top: 250%;
+    left: 48%;
+    transform: rotate(90deg);
+    transition: .5s;
+}
+
+#btn:hover span:nth-child(2) {
+    top: 0;
+}
+
+span:nth-child(3) {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: blue;
+    top: 8%;
+    right: -100%;
+    transition: .5s;
+}
+
+#btn:hover span:nth-child(3) {
+    right: 0;
+}
+
+span:nth-child(4) {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #000;
+    top: 250%;
+    left: -48%;
+    transform: rotate(90deg);
+    transition: .5s;
+}
+
+#btn:hover span:nth-child(4) {
+    top: 0;
+}
+
+/* ------------------------------------------- */
+
+.btn {
+    position: relative;
+    padding: 10px 25px;
+    font-size: 40px;
+    margin-top: 20px;
+    color: #fff;
+    border: 2px solid #000;
+    background: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #000;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    bottom: 0;
+    left: 0;
+    background: #000;
+    transition: .3s;
+    z-index: -1;
+}
+
+.btn:hover::before {
+    height: 100%;
+}
+
+.btn:hover {
+    color: red;
+}
+
+/* ---------------------------------------------- */
+
+#BTN {
+    display: block;
+    margin: 100px auto;
+    font-size: 40px;
+    padding: 10px 30px;
+    background: transparent;
+    border: 3px solid #000;
+    cursor: pointer;
+}

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --hero-c: #e4ad09;
+    --bd-bg: #bebbbb;
+    --p-c: #dddddd;
+}
+
+body {
+    background: var(--bd-bg);
+    font-family: 'Muli';
+    color: var(--hgero-c);
+}
+
+h1 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 a {
+    text-decoration: none;
+    color: var(--hero-c);
+}
+
+h1 a:hover {
+    color: red;
+}
+
+h1 a:hover::before {
+    content: 'link do filmiku na Udemy';
+    position: absolute;
+    top: -28px;
+    left: 20%;
+    padding: 5px;
+    font-size: 12px;
+    color: #ffffff;
+    font-weight: 200;
+    background: rgba(0, 0, 0, .25);
+    /* border: 1px solid red; */
+    opacity: .7;
+}
+
+/* ----------------------------------- */
+
+span {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    background: red;
+    padding: 10px 20px;
+    color: aliceblue;
+    font-family: 'Muli';
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+/* --- do hovera --- */
+
+span:hover~#roof {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background: #000;
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: .5s .5s;
+}
+
+span:hover~#front {
+    position: absolute;
+    top: 66%;
+    left: 50%;
+    width: 423px;
+    height: 300px;
+    background: #ddd;
+    transform: translate(-50%, -50%);
+    transition: .5s .6s;
+}
+
+span:hover~#window1 {
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition: .5s .5s;
+}
+
+span:hover~#window2 {
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background: blue;
+    transition: .5s .7s;
+}
+
+span:hover~#door {
+    position: absolute;
+    top: 74%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 150px;
+    background: brown;
+    transition: .5s .8s;
+}
+
+span:hover~#cheemney {
+    position: absolute;
+    top: 40%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 200px;
+    background: grey;
+    z-index: -1;
+    transition: .5s .9s;
+}
+
+/* --pozycja wyjściowa -- */
