@@ -57,21 +57,74 @@ button {
     margin: 300px;
     border-style: none;
     color: #fff;
-    background: transparent;
+    background: grey;
     overflow: hidden;
     transition: .5s;
     cursor: pointer;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
 }
 
-span {
+button:hover {
+    color: red;
+    background: rgb(75, 75, 75);
+}
+
+span:nth-child(1) {
     position: absolute;
     height: 3px;
-    width: 80%;
+    width: 100%;
     background: #fff;
     left: -100%;
     transition: .5s;
 }
 
-button:hover>span {
-    left: 10%;
+button:hover span:nth-child(1) {
+    left: 0%;
+}
+
+span:nth-child(2) {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: red;
+    top: 250%;
+    left: 48%;
+    transform: rotate(90deg);
+    transition: .5s;
+}
+
+button:hover span:nth-child(2) {
+    top: 0;
+}
+
+span:nth-child(3) {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: blue;
+    top: 8%;
+    right: -100%;
+    transition: .5s;
+}
+
+button:hover span:nth-child(3) {
+    right: 0;
+}
+
+span:nth-child(4) {
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #000;
+    top: 250%;
+    left: -48%;
+    transform: rotate(90deg);
+    transition: .5s;
+}
+
+button:hover span:nth-child(4) {
+    top: 0;
 }
