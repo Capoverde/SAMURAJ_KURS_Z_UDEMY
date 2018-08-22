@@ -227,6 +227,7 @@ button {
     border: 3px solid #000;
     position: relative;
     cursor: pointer;
+    overflow: hidden;
     -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
@@ -236,8 +237,30 @@ button::before {
     content: '';
     position: absolute;
     top: 0;
-    left: 0;
+    left: -20px;
     border-left: 20px solid #000;
     border-top: 35px solid transparent;
     border-bottom: 35px solid transparent;
+    transition: .3s;
+}
+
+button:hover::before {
+    left: 0px;
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) scale(0);
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+button:hover::after {
+    transform: translateY(-50%) scale(1);
 }
