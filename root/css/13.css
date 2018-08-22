@@ -9,7 +9,7 @@
 
 :root {
     --hero-c: #e4ad09;
-    --bd-bg: #363636;
+    --bd-bg: #b8aaaa;
     --p-c: #dddddd;
 }
 
@@ -177,6 +177,9 @@ span:nth-child(4) {
     cursor: pointer;
     overflow: hidden;
     transition: .5s linear;
+    -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
 }
 
 #BTN::after {
