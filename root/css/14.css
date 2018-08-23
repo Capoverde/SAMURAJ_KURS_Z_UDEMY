@@ -111,3 +111,7 @@ h2 {
 #border:hover~h2 {
   border: 20px solid #000;
 }
+
+h2.big {
+  font-size: calc(var(--fSz)*2);
+}
