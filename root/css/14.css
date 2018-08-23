@@ -100,9 +100,9 @@ h2 {
   transition: .3s;
 }
 
-#larger:hover~h2 {
+/* #larger:hover~h2 {
   font-size: calc(var(--fSz)*2);
-}
+} */
 
 #smaller:hover~h2 {
   font-size: calc(var(--fSz)/2);
@@ -113,5 +113,5 @@ h2 {
 }
 
 h2.big {
-  font-size: calc(var(--fSz)*2);
+  font-size: 160px;
 }

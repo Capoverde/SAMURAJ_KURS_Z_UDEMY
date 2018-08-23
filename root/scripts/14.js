@@ -1,5 +1,5 @@
 $(function () {
-    $('#larger').on('click', function () {
-        $('h2').toggleCalss('big');
+    $('#larger').click(function () {
+        $('h2').toggleClass('big');
     })
 });
