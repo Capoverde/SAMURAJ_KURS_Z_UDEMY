@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bd-bg: #262626;
+    --hero-c: #ffc30b;
+}
+
+body {
+    background: var(--bd-bg);
+    font-family: 'Muli';
+    animation: sky 5s linear infinite;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+h1 a {
+    color: var(--hero-c);
+    text-decoration: none;
+    transition: .3s;
+}
+
+h1 a:hover {
+    color: red;
+}
+
+span {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 12px;
+    opacity: 0;
+}
+
+h1:hover span {
+    opacity: 1;
+}
+
+/* ----------------------------- */
+
+.sqr {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    /* animation: move 3s infinite linear; */
+}
+
+@keyframes move {
+    0% {}
+    30% {
+        margin-left: calc(100% - 200px)
+    }
+    40% {}
+    50% {
+        margin-left: calc(100% - 200px)
+    }
+    80% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
