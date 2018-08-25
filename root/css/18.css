@@ -49,3 +49,63 @@ h1 a:hover::before {
 }
 
 /* ----------------------------- */
+
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 30vh;
+  background-color: royalblue;
+  color: white;
+  overflow: hidden;
+}
+
+section h1 {
+  color: #fff;
+  letter-spacing: 3px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transform: translate(0, -50%);
+  font-size: 60px;
+  text-transform: uppercase;
+  animation: text 15s linear infinite both;
+}
+
+/* 
+section h1+h1 {
+  display: none;
+} */
+
+section h1:nth-last-child(2) {
+  animation-delay: 5s;
+}
+
+section h1:nth-last-child(3) {
+  animation-delay: 10s;
+}
+
+@keyframes text {
+  0% {
+    transform: translate(100%, -50%);
+  }
+  3% {
+    transform: translate(100%, -50%);
+  }
+  6% {
+    transform: translate(0, -50%);
+  }
+  29% {
+    transform: translate(0, -50%);
+  }
+  33% {
+    transform: translate(-100%, -50%);
+  }
+  100% {
+    transform: translate(-100%, -50%);
+  }
+}
