@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Muli:200,300,400');
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bd-bg: #a39b9b;
+  --hero-c: #ffc30b;
+}
+
+body {
+  background: var(--bd-bg);
+  font-family: 'Lato';
+}
+
+h1 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 a {
+  text-decoration: none;
+  color: var(--hero-c);
+  transition: .3s;
+  text-shadow: 1px 1px rgba(0, 0, 0, .75);
+}
+
+h1 a:hover {
+  color: red;
+}
+
+span {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  font-size: 10px;
+  opacity: 0;
+}
+
+h1:hover span {
+  opacity: 1;
+}
+
+/* ---------------------------------------- */
+
+button {
+  position: absolute;
+  padding: 20px 40px;
+  bottom: 15vh;
+  right: 15vw;
+  border: 2px solid #000;
+  background-color: transparent;
+  font-size: 40px;
+  font-family: 'Lato';
+  cursor: pointer;
+  animation: shake 5s linear infinite;
+  -webkit-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.75);
+}
+
+@keyframes shake {
+  91% {
+    transform: translateX(20px)
+  }
+  92% {
+    transform: translateX(-20px)
+  }
+  93% {
+    transform: translateX(20px)
+  }
+  94% {
+    transform: translateX(-20px)
+  }
+  95% {
+    transform: translateX(20px)
+  }
+  96% {
+    transform: translateX(-20px)
+  }
+  97% {
+    transform: translateX(20px)
+  }
+  98% {
+    transform: translateX(-20px)
+  }
+  99% {
+    transform: translateX(20px)
+  }
+  100% {
+    transform: translateX(0)
+  }
+}
