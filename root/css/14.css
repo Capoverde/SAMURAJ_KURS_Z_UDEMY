@@ -103,15 +103,27 @@ h2 {
   transition: .3s;
 }
 
-#larger:hover~h2 {
+/* #larger:hover~h2 {
+  font-size: calc(var(--fSz)*2);
+} */
+
+/* #smaller:hover~h2 {
+  font-size: calc(var(--fSz)/2);
+} */
+
+/* #border:hover~h2 {
+  border: 20px solid #000;
+} */
+
+h2.big {
   font-size: calc(var(--fSz)*2);
 }
 
-#smaller:hover~h2 {
+h2.small {
   font-size: calc(var(--fSz)/2);
 }
 
-#border:hover~h2 {
+h2.bdr {
   border: 20px solid #000;
 }
 

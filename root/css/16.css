@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400|Muli:200,300,400');
 *,
 *::before,
@@ -73,4 +74,102 @@ button span {
 
 button:hover span {
   top: -100px;
+=======
+@import url('https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i');
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bd-bg: #262626;
+    --hero-c: #ffc30b;
+}
+
+body {
+    background: var(--bd-bg);
+    font-family: 'Muli';
+    animation: sky 5s linear infinite;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+h1 a {
+    color: var(--hero-c);
+    text-decoration: none;
+    transition: .3s;
+}
+
+h1 a:hover {
+    color: red;
+}
+
+span {
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 12px;
+    opacity: 0;
+}
+
+h1:hover span {
+    opacity: 1;
+}
+
+/* ----------------------------- */
+
+.sqr {
+    margin-top: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation: move 3s infinite linear, color 2s infinite linear;
+    /* animation-name: move;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-delay: 2s; */
+}
+
+@keyframes move {
+    0% {}
+    30% {
+        margin-left: calc(100% - 200px)
+    }
+    40% {}
+    50% {
+        margin-left: calc(100% - 200px)
+    }
+    80% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: 0;
+    }
+}
+
+@keyframes color {
+    0% {}
+    20% {
+        background-color: #0f0;
+    }
+    40% {
+        background-color: blue;
+    }
+    60% {
+        background-color: yellow;
+    }
+    80% {
+        background-color: #fff;
+    }
+    100% {}
+>>>>>>> 90f074cfd6c215c13897263c170238f7269c9ba2
 }
