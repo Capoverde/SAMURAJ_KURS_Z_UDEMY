@@ -37,6 +37,7 @@ h1 a:hover {
 h1 a:hover::before {
   content: 'link do filmiku na Udemy';
   position: absolute;
+  width: 100%;
   top: -28px;
   left: 20%;
   padding: 5px;
@@ -57,6 +58,38 @@ div {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+#d-1 {
+  background: #000;
+}
+
+#d-2 {
+  position: absolute;
+  top: 0;
+  left: calc(100% - 30px);
+  background: red;
+}
+
+#d-3 {
+  position: absolute;
+  top: calc(100% - 30px);
+  left: 0;
+  background: green;
+}
+
+#d-4 {
+  position: absolute;
+  top: calc(100% - 30px);
+  left: calc(100% - 30px);
+  background: blue;
+}
+
+#d-5 {
+  position: absolute;
+  top: calc(100% - 30px);
+  left: calc(50% - 30px);
+  background: yellow;
 }
 
 @keyframes disco {
