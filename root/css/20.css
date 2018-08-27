@@ -57,6 +57,7 @@ p {
   left: 50%;
   color: #ddd;
   font-size: 30px;
+  overflow: hidden;
 }
 
 span {
